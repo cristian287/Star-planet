@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@300&family=Roboto:ital,wght@1,100&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	color:white;
+	font-family: 'Roboto', sans-serif;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+li{
+	list-style: none;
+}
+img{
+	height: 200px;
+
+}
+body{
+	background-color: black;
+}
+#header{
+	display: flex;
+	justify-content: space-around;
+	background-image: url(https://c1.wallpaperflare.com/preview/335/630/555/sky-night-stars-milky-way.jpg);
+}
+#header div{
+	display: flex-row
+}
+#header a img{
+	height: 4.688rem;
+}
+#header  a img:hover{
+	transform: rotate(3240deg);
+	transition: 3s;
+	transition-timing-function: ease-out;
+}
+#header a{
+	flex-direction: row;
+	font-size: 2.813rem;
+	flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Oswald', sans-serif;
+}
+#header a:hover{
+	text-decoration: underline;
+	color:yellow;
+}
+#mercado{
+	margin-left: 2.188rem;
+	padding-top: 2.188rem;
+	display:grid;
+	min-width: 100vh;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr ;
+	grid-gap: 3.125rem;
+	grid-template-areas:
+	"venta1 venta2 venta3";
+}
+.ventaUno{
+	grid-area:venta1; 
+	border: 2px white solid;
+}
+.ventaDos{
+	grid-area: venta2;
+	border: 2px white solid;
+	transition: 1s;
+	transition-delay: .3s;
+}
+.ventaDos a:hover{
+	opacity: 0%;
+}
+.ventaDos:hover{
+	opacity: 5%;
+	transition: 1s;
+}
+.ventaDos .agotado{
+	height: 6.25rem;
+	pointer-events: none;
+}
+.ventaDos .agotado:hover{
+	height: 6.25rem;
+
+}
+.ventaTres{
+	grid-area: venta3;
+	border: 2px white solid;
+}
+#mercado .compra a:hover{
+	text-decoration: underline;
+	font-size: 1.563rem;
+}
+.descripcion{
+	font-size: 1.25rem;
+}
+.descripcion:hover{
+	text-decoration: underline;
+}
+.valor{
+	font-size: 1.875rem;
+	border: 2px solid green;
+}
+.valor span a{
+	color: white;
+	background-color: green;
+	border-radius: 4.688rem;
+	transition: .1s;
+}
+.valor span a:hover{
+	transition: 1s;
+	background-color: orange;
+}
+#footer{
+	min-height: 4.688rem;
+	margin-top: 2.813rem;
+	display: flex;
+	justify-content: space-around;
+	background-image: url(https://c1.wallpaperflare.com/preview/335/630/555/sky-night-stars-milky-way.jpg);
+}
+#footer div{
+	display: flex-row;
+
+}
+#footer a{
+	flex-direction: row;
+	font-size: 2.813rem;
+	flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Oswald', sans-serif;
+}
+#footer a:hover{
+	text-decoration: underline;
+	color:yellow;
+}
+#salida a{
+	color: red;
+	text-decoration: underline;
+}
+#salida a:hover{
+	opacity: 0%;
+	font-size: 0px;
+}
+#contenido {
+	margin-left: 2.188rem;
+	padding-top: 4.375rem;
+	display:grid;
+	min-width: 100vh;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 3.125rem;
+}
+.info{
+	border: 2px white solid;
+	transition: 1s;
+	transition-delay: .1s;
+}
+.info:hover{
+	background-image: url(https://www.nationalgeographic.com.es/medio/2021/08/23/representacion-artistica-de-la-via-lactea_44b3b1b9_985x554.jpg);
+	transition: 2s;
+
+}
+.titulo{
+	font-size: 1.875rem;
+	text-decoration: underline;
+}
+#contactos {
+	border: 3px white solid ;
+	margin-left: 2.188rem;
+	padding-top: 6.25rem;
+	padding-bottom: 7.5rem;
+	display:grid;
+	min-width: 100vh;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 1px;
+}
+.contac{
+	font-size: 2.813rem;
+}
+#mapa{
+	margin-left: 500px;
+	font-size: 45px;
+	text-decoration: underline
+}
+iframe{
+	margin-left: 31.25rem;
+}
+#contrato{
+	text-align: center;
+}
+.comprar a{
+	font-size: 4.063rem;
+	color: #E6FC07 ;
+	border: 3px green solid;
+	color:green;
+	transition: 1s;
+	transition-delay: .2s;
+	background-color: #60FC07 ;
+}
+
+.comprar a:hover{
+	color:yellow;
+	font-size:3.75rem;
+	transition: 1s;
+	border-radius: 50px;
+	background-color: #FC0707 ;
+
+}
+.aceptado{
+	text-align: center;
+	text-decoration: underline;
+	font-size: 2.813rem;
+	margin-bottom: 26.875rem;
+}
+.modal p{
+	color: black;
+	font-size: 20px;
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	img{
+	height: 100px;
+	}	
+	#header a img{
+	height: 45px;
+	}
+	#header a{
+	font-size: 34px;
+	}
+	.ventaDos .agotado{
+		height: 50px;
+	}
+	.contac{
+	font-size: 15px;
+	}
+	#contactos {
+	margin-left: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	}
+	iframe{
+	margin-left: 250px;
+	height: 300px
+	width:350px;
+	}
+	.descripcion{
+	font-size: 30px;
+	}
+	.aceptado{
+	margin-bottom: 248px;
+	}
+	.valor{
+	font-size: 20px;
+	}
+	.comprar a{
+	font-size: 25px;
+    }
+    .data_error{
+    	visibility: none;
+    	height: 0px
+    	width:0px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+	img{
+	height: 75px;
+	}	
+	#header a img{
+	height: 50px;
+	}
+	#header a{
+	font-size: 24px;
+	}
+	.ventaDos .agotado{
+		height: 30px;
+	}
+	.contac{
+	font-size: 15px;
+	}
+	#contactos {
+	margin-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	}
+	.descripcion{
+	font-size: 20px;
+	}
+	.aceptado{
+	margin-bottom: 148px;
+	}
+	iframe{
+	margin-left: 150px;
+	}
+	.valor{
+	font-size: 20px;
+	}
+	#contenido {
+	margin-left: 2.188rem;
+	padding-top: 4.375rem;
+	display:grid;
+	min-width: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 3.125rem;
+	}
+	.comprar a{
+	font-size: 25px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+	img{
+	height: 50px;
+	}	
+	#header a img{
+	height: 45px;
+	}
+	#header a{
+	font-size: 24px;
+	}
+	.ventaDos .agotado{
+		height: 30px;
+	}
+	.contac{
+	font-size: 15px;
+	}
+	#contactos {
+	margin-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	}
+	.descripcion{
+	font-size: 20px;
+	}
+	.aceptado{
+	margin-bottom: 148px;
+	}
+	iframe{
+	margin-left: 150px;
+	}
+	.valor{
+	font-size: 20px;
+	}
+	#mercado{
+	margin-left: 5px;
+	padding-top: 5px;
+	grid-gap: 3px;
+	}
+	#contenido {
+	margin-left: 2.188rem;
+	padding-top: 4.375rem;
+	display:grid;
+	min-width: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 3.125rem;
+	}
+	.comprar a{
+	font-size: 25px;
+    }
+}
+@media (min-width: 100px) and (max-width: 575px){
+	img{
+	height: 50px;
+	}	
+	#header a img{
+	height: 30px;
+	}
+	#header a{
+	font-size: 15px;
+	}
+	.ventaDos .agotado{
+		height: 20px;
+	}
+	.contac{
+	font-size: 15px;
+	}
+	#contactos {
+	border: 0px;
+	margin-left: 0px;
+	padding-top: 9px;
+	padding-bottom: 0px;
+	}
+	.descripcion{
+	font-size: 15px;
+	}
+	.aceptado{
+	margin-bottom: 140px;
+	}
+	iframe{
+	margin-left: 0px;
+	height: 200px;
+	width: 300px;
+	}
+	.valor{
+	font-size: 15px;
+	}
+	#salida a{
+		font-size: 20px;
+	}
+	.titulo{
+	font-size: 15px;
+	}
+	#contenido {
+	margin-left: 2px;
+	padding-top: 0px;
+	grid-gap: 1px;
+	}
+	#mercado{
+	margin-left: 3px;
+	padding-top: 0px;
+	grid-gap: 0px;
+	}	
+	#contenido {
+	margin-left: 2.188rem;
+	padding-top: 4.375rem;
+	display:grid;
+	min-width: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 3.125rem;	
+	}
+	.comprar a{
+	font-size: 25px;
+    }
+}
